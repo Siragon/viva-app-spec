@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<!-- <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html> -->
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Viva</title>
+	  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	  <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+	  <!-- <script type="text/javascript" charset="utf-8" src="main.js"></script>   -->
+
+	  <style>
+	  .head{position:fixed;top:0px;background-color:#ededed;width:345px;}
+	  .frame{background-color:white;margin:0px 10px;width:325px;}
+	  .head_title, .head_model, .binfo{border: 1px solid #e4e4e4;}
+	  .head_title{padding:15px 0px;margin-top:10px;border-bottom:none;}
+	  .head_model{border-top:none;height:186px;border-top:1px solid #e4e4e4;}
+	  td.ding{width:15%;text-align:center;}
+	  .ding img{width:10px;height:10px;}
+	  .head_title a{color:#9b9b9b;padding:10px;font-weight:bold;font-size:18px;}
+	  .head_model img{width:100%;position:relative;border-bottom:1px solid #e4e4e4;height:186px;}
+	  .swell_head{height:265px;}
+	  .param_view{color:black;font:"Roboto" 500 14px;}
+	  .param_view table{width:100%;}
+	  table#tinfo{border-bottom: 1px solid #c8c8c8;}
+	  table#tinfo, table#tinfo tr,table#tinfo tr td{margin:0px;padding:0px;display: -webkit-box;}
+	  table#tinfo tr td.lt{width:105px;font:600 15px Roboto ;border-right:1px solid #e4e2e7;}
+	  table#tinfo tr td.rt{width:200px;color:#808080;}
+	  table#tinfo tr td.rt, table#tinfo tr td.lt{padding:7px 5px;}
+	</style>
+
+  </head>
+  <body onload="init();" id="stage" class="theme">
+   <div class="head swell_head" align="center">
+    <div class="head_title frame" align="center">
+	  <table  style="width:100%">
+		<tr>
+		  <td class="ding"><img src="img/ding.png"/></td>
+		  <td style="text-align:center;"><a>Specification</a></td>
+		  <td class="ding"><img src="img/ding.png"/></td>
+		</tr>
+	  </table>
+	  
+	</div>
+    <div class="head_model frame">
+	  <img src="img/phone_model.jpg" />
+    </div>
+   </div>	
+   <div class="binfo frame">
+	 <div class="swell_head"></div>
+	 <table id="tinfo">
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Netwrok
+		    </a>
+		  </td>
+		  <td class="rt">
+			2.5G(GEDGE/GSM/GPRS):900/1800 MHZ<br/>
+			3G(WCDMA):900/2100 MHZ
+		  </td>
+		</tr>
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Display
+		    </a>
+		  </td>
+		  <td class="rt">
+			5.5”FHD（1080*1920） LTPS-IPS GFF
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  AP
+			</a>
+		  </td>
+		  <td class="rt">
+			MT6592 Octa -core ARM Cortex-A7 MPCore operating up to 1.7GHz
+		  </td>
+		</tr>
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  OS
+		    </a>
+		  </td>
+		  <td class="rt">
+			Android 4.2.2
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Camera
+		    </a>
+		  </td>
+		  <td class="rt">
+			Main（Rear）：13Mega Pixel Auto Focus Camera with Flashlight<br/>
+			Full HD Recording(1080P)@30fps<br/>
+			Sub(Front): 5Mega Pixel Fixed Focus Camera
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Video
+		    </a>
+		  </td>
+		  <td class="rt">
+			encoder: H.263 , H.264<br/>
+			Decoder:HEVC,VP9,H.264 , Sorenson H.263/H.263 , MPEG-4 SP/ASP , DIVX4/DIVX5/DIVX6/DIVX HS/XVID , VP8 , VC-1
+		  </td>
+		</tr>
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Audio
+		    </a>
+		  </td>
+		  <td class="rt">
+			encoder:AMR-NB , AMR-WB . AAC , OGG , ADPCM<br/>
+			Decoder:WAV , AAC , AMR-NB , AMR-WB , MIDI , Vorbis , APE , AAC-plus v1 , AAC-plus v2 , FLAC , WMA , ADPCM
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Camera feature
+		    </a>
+		  </td>
+		  <td class="rt">
+			GPS location info , Anti-flicker , Zero shutter delay , Voice capture , Face detection , self timer , HDR(High Dynamic Range) , Face beauty , Panorama , Sports , Surround shot , Auto scene detect
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Connectivity
+		    </a>
+		  </td>
+		  <td class="rt">
+			WiFi 802.11 b/g/n<br/>
+			GPS+AGPS<br/>
+			Bluetooth4.0 Low Energy(LE)<br/>
+			NFC
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Sensor
+		    </a>
+		  </td>
+		  <td class="rt">
+			G-Sensor , Ambient Light Sensor , Proximity Sensor, Geomagnetic Sensor, Gyroscope
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Memory
+		    </a>
+		  </td>
+		  <td class="rt">
+			16GB User memory<br/>
+			2GB RAM
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Dimension
+		    </a>
+		  </td>
+		  <td class="rt">
+			L*W*H(149*76*7.6)
+		  </td>
+		</tr>
+
+		<tr>
+		  <td class="lt" align="left" valign="top">
+			<a>
+			  Battery
+		    </a>
+		  </td>
+		  <td class="rt">
+			2600mAh
+		  </td>
+		</tr>
+	  </table>
+   </div>
+  </body>
+</html>
+

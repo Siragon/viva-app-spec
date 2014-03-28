@@ -1,3 +1,45 @@
+# ANDROID  ECLIPSE
+ 
+# generated files - android project subfolder
+Androidbin
+Androidgen
+Androidassets
+ 
+# generated files
+bin
+gen
+ 
+# Local configuration file (sdk path, etc)
+local.properties
+ 
+# IOS  Xcode
+build
+.pbxuser
+!default.pbxuser
+.mode1v3
+!default.mode1v3
+.mode2v3
+!default.mode2v3
+.perspectivev3
+!default.perspectivev3
+.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+.moved-aside
+IOSwww
+ 
+# OSX
+.DS_Store
+ 
+# Thumbnails
+._
+ 
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
 # built application files
 *.apk
 *.ap_
@@ -12,8 +54,6 @@
 bin/
 gen/
 
-# Local configuration file (sdk path, etc)
-local.properties
 
 # Eclipse project files
 .classpath
@@ -27,3 +67,7 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+platforms/android/
+
+Thumbs.db
