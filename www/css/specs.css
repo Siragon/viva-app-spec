@@ -1,0 +1,191 @@
+
+
+
+
+#specs-list {
+	
+    font-size: 11px;
+	 margin: 0px;
+
+}
+
+
+#specs-list p {
+	
+
+	
+    padding: 0px;
+	
+
+}
+
+
+#specs-list p a {
+	
+    color: #7D7464;
+	
+    text-decoration: none;
+	
+
+}
+
+
+#non-gsm p {
+	
+    color: #4B3C23;
+	
+    font-weight: bold;
+	
+
+}
+
+
+#specs-list table {
+	
+    
+	
+
+}
+
+
+#specs-list caption {
+	
+    display: none;
+	
+
+}
+
+
+#specs-list th, #specs-list td {
+	
+    
+	
+    padding: 1px 2px;
+	
+    vertical-align: top;
+	
+
+}
+
+
+#specs-list th {
+	
+    
+	
+    
+	
+    color: #F3AE1B;
+
+	
+    text-transform: uppercase;
+	
+    width: 55px;
+	
+
+}
+
+
+#specs-list td {
+	
+    
+	
+    
+	
+    line-height: 16px;
+	
+
+}
+
+
+#specs-list td.ttl {
+	
+    color: #DDD;
+	
+    font-weight: bold;
+	
+    width: 77px;
+	
+
+}
+
+
+#specs-list tr:last-child td {
+	
+    
+	
+
+}
+
+
+#specs-list td.ttl a {
+	
+    color: #CCC;
+	
+
+}
+
+
+#specs-list td.nfo ul {
+	
+    margin-left: 16px;
+	
+
+}
+
+
+#specs-list td.nfo a {
+	
+    color: #FFF;
+	
+    text-decoration: none;
+	
+
+}
+
+
+#specs-list td.nfo a.noUnd {
+	
+    color: #FFF;
+	
+    text-decoration: none;
+	
+
+}
+
+
+#specs-list td.nfo a.noUnd:hover {
+	
+    color: #FFF;
+	
+    text-decoration: none;
+	
+
+}
+
+
+#specs-list td.nfo li {
+	
+    list-style-type: disc;
+	
+    padding: 1px 0;
+	
+
+}
+
+
+
+#all-phones ul {
+	
+    height: 178px;
+	
+    overflow: auto;
+	
+
+}
+
+
+#specs-list td.nfo {
+	
+
+}
+

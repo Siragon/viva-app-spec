@@ -46,200 +46,281 @@
   <head>
     <meta name="viewport" content="width=320; user-scalable=no" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Viva</title>
+    <title>SP-7000</title>
 	  <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="css/specs.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	  <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 	  <!-- <script type="text/javascript" charset="utf-8" src="main.js"></script>   -->
 
 	  <style>
-	  .head{position:fixed;top:0px;background-color:#ededed;width:345px;}
-	  .frame{background-color:white;margin:0px 10px;width:325px;}
-	  .head_title, .head_model, .binfo{border: 1px solid #e4e4e4;}
-	  .head_title{padding:15px 0px;margin-top:10px;border-bottom:none;}
-	  .head_model{border-top:none;height:186px;border-top:1px solid #e4e4e4;}
+          body{
+                background-color:#000;
+              color: #ccc;
+              padding: 0px;
+              margin: 0px;
+              
+          }
+          a{text-decoration: none;}
+	  .head{position:fixed;top:0px;background-color:transparent;width:100%;}
+	  .frame{background-color:transparent;margin:0px;width:100%;}
+	  .head_title, .head_model, .binfo{border: 0px solid #F3AE1B;}
+	  .head_title{padding:0px 0px;margin-top:10px;border-bottom:none;}
+	  .head_model{border-top:none;  border-top:0px solid #F3AE1B;}
 	  td.ding{width:15%;text-align:center;}
 	  .ding img{width:10px;height:10px;}
 	  .head_title a{color:#9b9b9b;padding:10px;font-weight:bold;font-size:18px;}
-	  .head_model img{width:100%;position:relative;border-bottom:1px solid #e4e4e4;height:186px;}
+	  .head_model img{width:100%;position:relative; top: 40px; border-bottom:0px solid #F3AE1B;
+          background-color: #010101;
+    border-bottom-color: #000;
+    border-bottom-style: solid;
+          border-bottom-width: 2px;
+      }
 	  .swell_head{height:265px;}
 	  .param_view{color:black;font:"Roboto" 500 14px;}
 	  .param_view table{width:100%;}
-	  table#tinfo{border-bottom: 1px solid #c8c8c8;}
-	  table#tinfo, table#tinfo tr,table#tinfo tr td{margin:0px;padding:0px;display: -webkit-box;}
-	  table#tinfo tr td.lt{width:105px;font:600 15px Roboto ;border-right:1px solid #e4e2e7;}
-	  table#tinfo tr td.rt{width:200px;color:#808080;}
-	  table#tinfo tr td.rt, table#tinfo tr td.lt{padding:7px 5px;}
+.actionBar {
+    background-color: #010101;
+    border-bottom-color: #BB6008;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    font-family: Roboto,"Droid Sans",Arial,Helvetica,sans-serif;
+    font-size: 11pt;
+}
+          .actionBar span {
+    display: inline-block;
+    margin: 12px;
+              color: #fff;
+}
 	</style>
 
   </head>
   <body onload="init();" id="stage" class="theme">
-   <div class="head swell_head" align="center">
-    <div class="head_title frame" align="center">
-	  <table  style="width:100%">
-		<tr>
-		  <td class="ding"><img src="img/ding.png"/></td>
-		  <td style="text-align:center;"><a>Specification</a></td>
-		  <td class="ding"><img src="img/ding.png"/></td>
-		</tr>
-	  </table>
-	  
-	</div>
+   <div class="head swell_head" align="left">
+<header class="actionBar"><span>Especificaciones</span></header>
     <div class="head_model frame">
 	  <img src="img/phone_model.jpg" />
     </div>
    </div>	
-   <div class="binfo frame">
+   <div id="specs-list" class="binfo frame">
 	 <div class="swell_head"></div>
-	 <table id="tinfo">
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Netwrok
-		    </a>
-		  </td>
-		  <td class="rt">
-			2.5G(GEDGE/GSM/GPRS):900/1800 MHZ<br/>
-			3G(WCDMA):900/2100 MHZ
-		  </td>
-		</tr>
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Display
-		    </a>
-		  </td>
-		  <td class="rt">
-			5.5”FHD（1080*1920） LTPS-IPS GFF
-		  </td>
-		</tr>
+	 
+					
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  AP
-			</a>
-		  </td>
-		  <td class="rt">
-			MT6592 Octa -core ARM Cortex-A7 MPCore operating up to 1.7GHz
-		  </td>
-		</tr>
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  OS
-		    </a>
-		  </td>
-		  <td class="rt">
-			Android 4.2.2
-		  </td>
-		</tr>
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Camera
-		    </a>
-		  </td>
-		  <td class="rt">
-			Main（Rear）：13Mega Pixel Auto Focus Camera with Flashlight<br/>
-			Full HD Recording(1080P)@30fps<br/>
-			Sub(Front): 5Mega Pixel Fixed Focus Camera
-		  </td>
-		</tr>
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Video
-		    </a>
-		  </td>
-		  <td class="rt">
-			encoder: H.263 , H.264<br/>
-			Decoder:HEVC,VP9,H.264 , Sorenson H.263/H.263 , MPEG-4 SP/ASP , DIVX4/DIVX5/DIVX6/DIVX HS/XVID , VP8 , VC-1
-		  </td>
-		</tr>
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Audio
-		    </a>
-		  </td>
-		  <td class="rt">
-			encoder:AMR-NB , AMR-WB . AAC , OGG , ADPCM<br/>
-			Decoder:WAV , AAC , AMR-NB , AMR-WB , MIDI , Vorbis , APE , AAC-plus v1 , AAC-plus v2 , FLAC , WMA , ADPCM
-		  </td>
-		</tr>
+<table cellspacing="0">
+<tbody><tr>
+<th rowspan="6" scope="row">General</th>
+<td class="ttl"><a href="#" data-help="helpW('network.htm');">2G Network</a></td>
+<td class="nfo">GSM 850 / 900 / 1800 / 1900 - SIM 1 &amp; SIM 2</td>
+</tr><tr>
+<td class="ttl"><a href="#" data-help="helpW('network.htm');">3G Network</a></td>
+<td class="nfo">HSDPA 900 / 2100 - SIM 1 only</td>
+</tr>
+<tr>
+<td class="ttl">&nbsp;</td>
+<td class="nfo">HSDPA 850 / 2100 - SIM 1 only</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#" data-help="helpW('sim.htm');">SIM</a></td>
+<td class="nfo">Dual SIM (Mini-SIM)</td>
+</tr><tr>
+<td class="ttl"><a href="#" data-help="helpW('h_year.htm');">Announced</a></td>
+<td class="nfo">2012, August</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#" data-help="helpW('h_status.htm');">Status</a></td>
+<td class="nfo">Available. Released 2012, September</td>
+</tr>
+</tbody></table><table cellspacing="0">
+<tbody><tr>
+<th rowspan="2" scope="row">Body</th>
+<td class="ttl"><a href="#" data-help="helpW('h_dimens.htm');">Dimensions</a></td>
+<td class="nfo">132.5 x 67.7 x 11 mm (5.22 x 2.67 x 0.43 in)</td>
+</tr><tr>
+<td class="ttl"><a href="#" data-help="helpW('h_weight.htm');">Weight</a></td>
+<td class="nfo">155 g (5.47 oz)</td>
+</tr>
+		
+</tbody></table><table cellspacing="0">
+<tbody><tr>
+<th rowspan="3" scope="row">Display</th>
+<td class="ttl"><a href="#display-type">Type</a></td>
+<td class="nfo">TFT capacitive touchscreen, 256K colors</td>
+</tr><tr>
+<td class="ttl"><a href="#" data-help="helpW('h_dsize.htm');">Size</a></td>
+<td class="nfo">480 x 854 pixels, 4.3 inches (~228 ppi pixel density)</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#multitouch">Multitouch</a></td>
+<td class="nfo">Yes</td>
+</tr>
+		
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Camera feature
-		    </a>
-		  </td>
-		  <td class="rt">
-			GPS location info , Anti-flicker , Zero shutter delay , Voice capture , Face detection , self timer , HDR(High Dynamic Range) , Face beauty , Panorama , Sports , Surround shot , Auto scene detect
-		  </td>
-		</tr>
+</tbody></table><table cellspacing="0">
+<tbody><tr>
+<th rowspan="3" scope="row">Sound</th>
+<td class="ttl"><a href="#call-alerts">Alert types</a></td>
+<td class="nfo">Vibration, MP3, WAV ringtones</td>
+	</tr>
+	
+<tr>
+<td class="ttl"><a href="#loudspeaker">Loudspeaker</a> </td>
+<td class="nfo">Yes</td>
+</tr>
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Connectivity
-		    </a>
-		  </td>
-		  <td class="rt">
-			WiFi 802.11 b/g/n<br/>
-			GPS+AGPS<br/>
-			Bluetooth4.0 Low Energy(LE)<br/>
-			NFC
-		  </td>
-		</tr>
+<tr>
+<td class="ttl"><a href="#audio-jack">3.5mm jack</a> </td>
+<td class="nfo">Yes</td>
+</tr>
+	
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Sensor
-		    </a>
-		  </td>
-		  <td class="rt">
-			G-Sensor , Ambient Light Sensor , Proximity Sensor, Geomagnetic Sensor, Gyroscope
-		  </td>
-		</tr>
+	
+</tbody></table><table cellspacing="0">
+<tbody><tr>
+<th rowspan="2" scope="row">Memory</th>
+<td class="ttl"><a href="#memory-card-slot">Card slot</a></td>
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Memory
-		    </a>
-		  </td>
-		  <td class="rt">
-			16GB User memory<br/>
-			2GB RAM
-		  </td>
-		</tr>
+<td class="nfo">microSD, up to 32 GB</td></tr>
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Dimension
-		    </a>
-		  </td>
-		  <td class="rt">
-			L*W*H(149*76*7.6)
-		  </td>
-		</tr>
+	
 
-		<tr>
-		  <td class="lt" align="left" valign="top">
-			<a>
-			  Battery
-		    </a>
-		  </td>
-		  <td class="rt">
-			2600mAh
-		  </td>
-		</tr>
-	  </table>
+<tr>
+<td class="ttl"><a href="#dynamic-memory">Internal</a></td>
+<td class="nfo">512 MB RAM, 4 GB ROM</td>
+</tr>
+	
+
+	
+		
+
+
+</tbody></table><table cellspacing="0">
+<tbody><tr>
+<th rowspan="8" scope="row">Data</th>
+<td class="ttl"><a href="#gprs">GPRS</a></td>
+<td class="nfo">Yes</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#edge">EDGE</a></td>
+<td class="nfo">Yes</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#3g">Speed</a></td>
+<td class="nfo">HSDPA, HSUPA</td>
+</tr>
+	
+<tr>
+<td class="ttl"><a href="#wi-fi">WLAN</a></td>
+<td class="nfo">Wi-Fi 802.11 b/g/n, Wi-Fi hotspot</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#bluetooth">Bluetooth</a></td>
+<td class="nfo">Yes, v3.0</td>
+</tr>
+	
+	
+
+<tr>
+<td class="ttl"><a href="#usb">USB</a></td>
+<td class="nfo">Yes, microUSB v2.0</td>
+</tr>
+</tbody></table><table cellspacing="0">
+<tbody><tr>
+<th rowspan="4" scope="row">Camera</th>
+<td class="ttl"><a href="#camera">Primary</a></td>
+<td class="nfo">5 MP, 2592 х 1944 pixels, autofocus, LED flash</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#camera">Features</a></td>
+<td class="nfo">Geo-tagging</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#camera">Video</a></td>
+<td class="nfo">Yes</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#video-call">Secondary</a></td>
+<td class="nfo">Yes, VGA</td>
+</tr>
+</tbody></table><table cellspacing="0">
+<tbody><tr>
+<th rowspan="14" scope="row">Features</th>
+<td class="ttl"><a href="#os">OS</a></td>
+<td class="nfo">Android OS, v4.0 (Ice Cream Sandwich)</td>
+</tr><tr>
+<td class="ttl"><a href="#chipset">Chipset</a></td>
+<td class="nfo">Qualcomm MSM8225 Snapdragon</td>
+</tr><tr>
+<td class="ttl"><a href="#cpu">CPU</a></td>
+<td class="nfo">Dual-core 1.2 GHz</td>
+</tr><tr>
+<td class="ttl"><a href="#gpu">GPU</a></td>
+<td class="nfo">Adreno 203</td>
+</tr><tr>
+<td class="ttl"><a href="#sensors">Sensors</a></td>
+<td class="nfo">Accelerometer, proximity</td>
+</tr><tr>
+<td class="ttl"><a href="#messaging">Messaging</a></td>
+<td class="nfo">SMS(threaded view), MMS, Email, Push Email, IM</td>
+</tr><tr>
+<td class="ttl"><a href="#browser">Browser</a></td>
+<td class="nfo">HTML</td>
+</tr><tr>
+<td class="ttl"><a href="#fm-radio">Radio</a></td>
+<td class="nfo">No</td>
+</tr> 	
+
+ 	
+<tr>
+<td class="ttl"><a href="#gps">GPS</a></td>
+<td class="nfo">Yes, with A-GPS support</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#java">Java</a></td>
+<td class="nfo">Yes, via Java MIDP emulator</td>
+</tr>
+<tr>
+<td class="ttl"><a href="#" data-help="helpW('h_colors.htm');">Colors</a></td>
+<td class="nfo">Gray, White</td>
+</tr>
+<tr><td class="ttl">&nbsp;</td><td class="nfo">- SNS applications<br>
+- MP3/AAC+ player<br>
+- MP4/H.264/H.263 player<br>
+- Google Search, Maps, Gmail,<br>
+- YouTube, Google Talk<br>
+- Document viewer<br>
+- Photo viewer/editor<br>
+- Organizer<br>
+- Voice memo/dial<br>
+- Predictive text input</td></tr>
+	
+
+</tbody></table><table cellspacing="0">
+<tbody><tr>
+<th rowspan="3" scope="row">Battery</th>
+<td class="ttl">&nbsp;</td>
+<td class="nfo">Li-Ion 1550 mAh battery</td>
+</tr><tr>
+<td class="ttl"><a href="#stand-by-time">Stand-by</a></td>
+<td class="nfo">Up to 200 h</td>
+</tr><tr>
+<td class="ttl"><a href="#talk-time">Talk time</a></td>
+<td class="nfo">Up to 4 h 30 min</td>
+</tr>
+	
+</tbody></table>
+
+
+
+
    </div>
   </body>
 </html>
